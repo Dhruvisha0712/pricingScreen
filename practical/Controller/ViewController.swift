@@ -1302,7 +1302,7 @@ extension ViewController: UITableViewDelegate {
             if checked {
                 checkIndexes.removeValue(forKey: filteredSpecifications[indexPath.section].list[indexPath.row].id)
                 
-                let price = filteredSpecifications[indexPath.section].list[indexPath.row].price * listQuantity
+                let price = filteredSpecifications[indexPath.section].list[indexPath.row].price
                 total -= price
                 let tot = total * quantity
                 addToCartBtn.setTitle("Add To Cart - ₹ \(tot)", for: .normal)
